@@ -8,9 +8,8 @@ import Student from './Student/Student';
 const Students = (): React.ReactElement => {
   const {students, deleteStudentMutate } = useStudents();
 
-  const onDeleteHandler = (studetnId: number) =>{
-    console.log('>> studetnId', studetnId);
-    deleteStudentMutate(studetnId);
+  const onDeleteHandler = (studentId: number) =>{
+    deleteStudentMutate(studentId);
   }
 
   return (
