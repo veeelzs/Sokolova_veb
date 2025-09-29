@@ -17,6 +17,7 @@ const Students = (): React.ReactElement => {
     <div className={styles.Students}>
       {students.map((student: StudentInterface) => (
         <Student
+        key={student.id}
         student={student}
         onDelete={onDeleteHandler}
         />
